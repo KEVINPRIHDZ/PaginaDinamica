@@ -1,0 +1,79 @@
+<html>
+     <head>
+         <title>Pagina Dinamica</title>
+            	<font color="white"size=10>"Pagina Dinamica"</td></font>
+               </br>
+     <body background="https://wallpaperstock.net/wallpapers/thumbs1/1933.jpg"</body>
+            </br>
+         <font color="white"size=4>Nombre
+         <input type="text" name="nombredelacaja">
+     </br>
+        </br>
+     Selecciona tu edad
+         <script>
+             function modForm(valor){
+                formulario = document.getElementById("formulario");
+                if(valor=='nino 1-5'){
+                   formulario.action="https://kevinwilliamsprietohernandez.github.io/Ni-o_1-5/";
+                }
+                if(valor=='nina 1-5'){
+                      formulario.action="https://kevinwilliamsprietohernandez.github.io/Ni-a-1-5/";
+                }
+                if(valor=='nino 6-10'){
+                     formulario.action="https://kevinwilliamsprietohernandez.github.io/Ni-o_6-10/";
+                }
+                if(valor=='nina 6-10'){
+                     formulario.action="https://kevinwilliamsprietohernandez.github.io/Ni-a_6-10/";
+                }
+                if(valor=='hombre adolescente 11-15'){
+                     formulario.action="https://kevinwilliamsprietohernandez.github.io/Hombre_adolescente-11-15/";
+                }
+                if(valor=='mujer adolescente 11-15'){
+                     formulario.action="https://kevinwilliamsprietohernandez.github.io/Mujer-Adolescente-11-15/";
+                }
+                if(valor=='hombre joven 16-20'){
+                     formulario.action="https://kevinwilliamsprietohernandez.github.io/Joven-Hombre-16-20/";
+                }
+                if(valor=='mujer joven 16-20'){
+                     formulario.action="https://kevinwilliamsprietohernandez.github.io/joven-mujer-16-20/";
+                }
+                if(valor=='hombre adulto 20-60'){
+                     formulario.action="https://kevinwilliamsprietohernandez.github.io/Hombre-adulto-20-60/";
+                }
+                 if(valor=='mujer adulto 20-60'){
+                     formulario.action="https://kevinwilliamsprietohernandez.github.io/Mujer-adulto-20-60/";
+                }
+            }
+        </script>
+     </head>
+     <body>
+          <form name="formulario" id="formulario" action = "" method="" >
+
+
+          <p>
+          <select name="escuela" id="escuela" onchange="modForm(this.value)">
+               <option value="">selecciona</option>
+               <option value="nino 1-5">niño 1-5</option>
+               <option value="nina 1-5">niña 1-5</option>
+               <option value="nino 6-10">niño 6-10</option>a
+               <option value="nina 6-10">niña 6-10</option>
+               <option value="hombre adolescente 11-15">hombre adolescente 11-15</option>
+               <option value="mujer adolescente 11-15">mujer adolescente 11-15</option>
+               <option value="hombre joven 16-20">hombre joven  16-20</option>
+               <option value="mujer joven 16-20">mujer joven  16-20</option>
+               <option value="hombre adulto 20-60">hombre adulto 20-60</option>
+               <option value="mujer adulto 20-60">mujer adulto 20-60</option>
+          </select>
+          </p>
+          Selecciona tu genero:
+ </br>
+ </br>
+  <input type="radio" name="gender" value="male"> Hombre<br>
+  <input type="radio" name="gender" value="female"> Mujer<br>
+</br>
+
+
+          <input name="Enviar" type="submit" id="Enviar" value="Enviar" size="3" >
+      </form>
+    </body>
+</html>
